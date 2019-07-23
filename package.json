@@ -1,0 +1,71 @@
+{
+  "name": "koa2_ts_typeorm",
+  "version": "1.0.0",
+  "description": "new project",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node dist/server.js --max_old_space_size=32768",
+    "dev": "cross-env NODE_ENV=development nodemon dist/server.js",
+    "watch": "rm -rf dist && tsc -w",
+    "build": "rm -rf dist && tsc",
+    "doc": "apidoc -i src/ -o apidoc/"
+  },
+  "author": {
+    "name": "wy"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "license": "ISC",
+  "apidoc": {
+    "name": "主系统",
+    "version": "0.0.1",
+    "description": "接口文档",
+    "title": "DAPP",
+    "url": "http://127.0.0.1:8888",
+    "sampleUrl": "http://127.0.0.1:8888",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "apidoc": "^0.17.7",
+    "axios": "^0.19.0",
+    "cross-env": "^5.2.0",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.8.14",
+    "dotenv": "^8.0.0",
+    "elasticsearch": "^16.1.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-xml-body": "^2.1.0",
+    "koa2-cors": "^2.0.6",
+    "md5": "^2.2.1",
+    "mysql": "^2.17.1",
+    "pm2": "^3.5.1",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "ts-node": "^8.2.0",
+    "typeorm": "^0.2.17",
+    "uuid": "^3.3.2",
+    "xlsx": "^0.14.3",
+    "xmlreader": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.40",
+    "@types/koa-xml-body": "^2.0.0",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/node": "^12.0.4",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.5.1"
+  }
+}

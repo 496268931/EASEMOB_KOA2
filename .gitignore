@@ -1,0 +1,8 @@
+node_modules
+src/**/*.js
+src/**/*.js.map
+dist
+# ormconfig.json
+# .vscode
+# .vscode/*
+apidoc/

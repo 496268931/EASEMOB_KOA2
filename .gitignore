@@ -6,3 +6,5 @@ dist
 # .vscode
 # .vscode/*
 apidoc/
+yarn.lock
+package-lock.json
